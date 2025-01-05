@@ -1,0 +1,19 @@
+turnback
+IF next-is-not-enemy THEN
+    turnleft
+    skip
+    skip-again
+END IF
+WHILE true DO
+    move
+    turnback
+END WHILE
+IF random THEN
+    move
+    turnback
+    infect
+    move
+ELSE
+    go-for-it
+END IF
+turnback
